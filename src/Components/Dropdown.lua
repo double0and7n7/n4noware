@@ -32,9 +32,9 @@ function Dropdown.Create(parent, options)
 			return value
 		end,
 
-		Set = function(newValue)
-			setValue(newValue)
-		end,
+		Set = function(_, newValue)
+	setValue(newValue)
+end,
 	}
 end
 
