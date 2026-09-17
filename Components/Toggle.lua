@@ -17,8 +17,9 @@ function Toggle.Create(parent, options)
 	button.Font = Enum.Font.Gotham
 	button.TextSize = 14
 
-	local function setValue(newValue)
-		value = newValue
+	Set = function(_, newValue)
+	setValue(newValue)
+end,
 
 		if callback then
 			callback(value)
